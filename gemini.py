@@ -44,9 +44,9 @@ def get_competitor_recommendations(brand_name, competitor):
 # # Predefined brand and competitor lists
 # brand_list = ["HP", "Dell", "Apple", "Microsoft", "Google", "Asus","Procter & Gamble","ITC","Tata Consulting Services","Burg King","Wolsvagan","Apple Watch","Apple iPhone","Apple US","Bayerische Motoren Werke","Ingvar Kamprad Elmtaryd Agunnaryd","Minnesota Mining and Manufacturing Company","British Petroleum","Bharat Petroleum"]
 # competitor_list = ["HP", "Dell", "Apple", "Microsoft", "Google", "Asus", "Samsung", "IBM", "Lenovo", "Acer","Burger King","KFC"]
-vizio = pd.read_csv("/Users/karan.dalania/vscode/vizio_list.csv")
-samba = pd.read_csv("/Users/karan.dalania/vscode/samba_list.csv")
-master_brands = pd.read_csv("/Users/karan.dalania/vscode/master_brands.csv")
+vizio = pd.read_csv("vizio_list.csv")
+samba = pd.read_csv("samba_list.csv")
+master_brands = pd.read_csv("master_brands.csv")
 
 
 vizio_list = vizio['brands'].dropna().tolist()
