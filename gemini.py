@@ -1,8 +1,8 @@
 import streamlit as st
-from google import genai
+import google.genai as g
 import pandas as pd
 
-client = genai.Client(api_key="AIzaSyAqtI0hK4ByICbUm1T-6N2Dy01pDYtwNxM")
+client = g.Client(api_key="AIzaSyAqtI0hK4ByICbUm1T-6N2Dy01pDYtwNxM")
 def generate_brand_prompt(brand_list, search_query):
     return f"""
     Given the following brand list: {brand_list} and the search query '{search_query}',
